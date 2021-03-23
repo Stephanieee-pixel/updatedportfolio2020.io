@@ -8,15 +8,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS --> 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-
-    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+   
+  <title>Portfolio</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     
@@ -42,7 +46,7 @@
               </li>
           </ul>
     </div>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="background-image: http://cdn.shopify.com/s/files/1/1192/7874/files/Minimalist_Living_-_How_to_Declutter_Your_Life_2048x2048.jpg?v=1529470251; background-size: 100%;">
       <div class="container">
         <h1 class="display-4" id="Home">Stephanie Gonzalez</h1>
       </div>
@@ -56,22 +60,44 @@
         <div class="card-body">
           <h5 class="card-title">Year 1</h5>
           <p class="card-text">
-            During my first year of the web design I had been introuduced to html and css. I used both to start off making a bassic website, and eventually added in some components of bootstrap.
+            During my first year of the Web Design program, I was introduced to html and css, later on some bootsrap to start creating websites and making them functional.
           </p>
           <button type="button" class="btn btn-dark">See more</button>
         </div>
       </div>
+      <button class="btn btn-outline-primary" id="btnlike" onclick="countingLikes()">
+        <span class="count" id="Like">0</span>
+        <img  src="https://www.freeiconspng.com/thumbs/thumbs-up-icon/blue-thumbs-up-icon-2.png"style="width:25px; height:25px;">
+        
+        </button>
+            
+        <button class="btn btn-outline-danger" id="btndislike" onclick="countingDislikes()">
+          <span class="" id="Dislike"><i class="fa fa-thumbs-down"></i>0</span>
+          <img src="http://www.pngmart.com/files/10/Thumbs-Down-Transparent-Background.png" style="width:30px;height:30px;">
+        </button>
+
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="img/pacifica.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Year 2</h5>
           <p class="card-text">
-            This card has supporting text below as a natural lead-in to
-            additional content.
+            The second year was continuing practicing what we learned from the year before. Soon after we were introduced to javascript and have been practicing coding the proper way since then.
           </p>
-          <button type="button" class="btn btn-dark">See more</button>
+          <button type="button" class="btn btn-dark" href="https://stephanieee-pixel.github.io/productcolorselector.io/">See more</button>
         </div>
       </div>
+
+      <button class="btn btn-outline-primary" id="btnlike" onclick="countingLikes()">
+        <span class="count" id="Like">0</span>
+        <img  src="https://www.freeiconspng.com/thumbs/thumbs-up-icon/blue-thumbs-up-icon-2.png"style="width:25px; height:25px;">
+        
+        </button>
+            
+        <button class="btn btn-outline-danger" id="btndislike" onclick="countingDislikes()">
+          <span class="" id="Dislike"><i class="fa fa-thumbs-down"></i>0</span>
+          <img src="http://www.pngmart.com/files/10/Thumbs-Down-Transparent-Background.png" style="width:30px;height:30px;">
+        </button>
+
       <div class="card">
         <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
@@ -87,6 +113,16 @@
     </div>
 </div>
    
+<button class="btn btn-outline-primary" id="btnlike" onclick="countingLikes()">
+  <span class="count" id="Like">0</span>
+  <img  src="https://www.freeiconspng.com/thumbs/thumbs-up-icon/blue-thumbs-up-icon-2.png"style="width:25px; height:25px;">
+  
+  </button>
+      
+  <button class="btn btn-outline-danger" id="btndislike" onclick="countingDislikes()">
+    <span class="" id="Dislike"><i class="fa fa-thumbs-down"></i>0</span>
+    <img src="http://www.pngmart.com/files/10/Thumbs-Down-Transparent-Background.png" style="width:30px;height:30px;">
+  </button>
     <br />
     <br />
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
@@ -94,7 +130,7 @@
       <div class="container">
         <h1 class="display-4" id="Resume">Resume</h1>
         <p class="lead">
-          In my first year of the web design program I've learned to use html and css to build websites. I have a good understanding in those two compenents and had been using bootstrap as well.
+          I'm currently in my second year of the web design progrram and have learned html, css, and some javascript.
         </p>
       </div>
     </div>
@@ -109,7 +145,7 @@
         <div class="card-body">
           <h5 class="card-title">Photography</h5>
           <p class="card-text">
-           The art of photography is very fascinnating to me, and it's quite possle that in the near future I could take photos of my own that I could use in future websites.
+           The art of photography is very fascinating to me, and it's quite possible that in the near future I could take photos of my own that I could use in future websites.
           </p>
         </div>
       </div>
@@ -124,13 +160,11 @@
         </div>
       </div>
       <div class="card">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="img/bilingual.jpeg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">Bilingual</h5>
           <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
+            I currently speak two languages, English and Spanish. However I'm trying to learn a third language.
           </p>
         </div>
       </div>
@@ -159,7 +193,22 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
-    ></script>
+    >
+    
+  var likes=0;
+  function countingLikes(){
+  likes++s
+  document.getElementById("Like").innerHTML=likes;
+
+}
+var dislikes=0;
+function countingDislikes(){
+dislikes++;
+document.getElementById("Dislike").innerHTML= dislikes;
+}
+    
+    
+    </script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -168,3 +217,5 @@
     -->
   </body>
 </html>
+
+    
