@@ -3,29 +3,51 @@ h1 {
   font-family: "Peddana", serif;
   font-size: 80px;
 }
-body {
+body,
+#page {
   text-align: center;
+  background-color: #7f9183;
 }
 button {
-  text-align; center;
+  text-align: center;
+}
+.link {
+  color: #f4f3ee;
 }
 html {
   scroll-behavior: smooth;
 }
-.card-body{
-  background-color: #69353F;
+.card-body {
+  background-color: #703d57;
 }
-.card-text{
+.card-text {
   color: white;
 }
-.nav-link{
-  color:#122932;
+.nav-link {
+  color: #122932;
 }
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
-.card-title{
-  color:#F3FFB9;
+.card-title {
+  color: #f3ffb9;
+  font-family: "Marck Script", cursive;
 }
-
-
+.display-4 {
+  font-family: "Gruppo", cursive;
+}
+.jumbotron {
+  background-image: url("img/minimalist.jpg");
+  background-size: cover;
+}
+#cover {
+  background-image: url(http://cdn.shopify.com/s/files/1/1192/7874/files/Minimalist_Living_-_How_to_Declutter_Your_Life_2048x2048.jpg?v=1529470251.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#Resume {
+  background-color: #b8b8aa;
+}
+#info {
+  background-color: #b8b8aa;
+}
